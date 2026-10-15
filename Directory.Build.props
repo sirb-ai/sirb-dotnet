@@ -6,4 +6,17 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Authors>Sirb</Authors>
   </PropertyGroup>
+
+  <!-- Supply chain: commit packages.lock.json (exact versions + content hashes) and restore
+       with locked mode in CI so a changed or substituted package fails the build. -->
+  <PropertyGroup>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+
+  <!-- NuGetAudit severity policy, aligned with the CI vulnerable-package gate: High (NU1903)
+       and Critical (NU1904) advisories stay errors via TreatWarningsAsErrors; Low (NU1901)
+       and Moderate (NU1902) stay visible warnings so they are reported without blocking. -->
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902</WarningsNotAsErrors>
+  </PropertyGroup>
 </Project>
