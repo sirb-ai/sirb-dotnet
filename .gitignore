@@ -480,3 +480,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+.claude/agent-memory-local/
+.claude/settings.local.json
