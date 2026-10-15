@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sirb.Blazor/Sirb.Blazor.csproj" />
+    <Project Path="src/Sirb.Cli/Sirb.Cli.csproj" />
+    <Project Path="src/Sirb.Core/Sirb.Core.csproj" />
+    <Project Path="src/Sirb.Runtime/Sirb.Runtime.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sirb.Tests/Sirb.Tests.csproj" />
+  </Folder>
+</Solution>

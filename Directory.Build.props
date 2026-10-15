@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Authors>Sirb</Authors>
+  </PropertyGroup>
+</Project>
